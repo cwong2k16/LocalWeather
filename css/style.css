@@ -1,0 +1,37 @@
+.background {
+  background-color: #2196f3;
+}
+
+.general-properties, .card, .weather-box {
+  background-color: white;
+  text-align: center;
+  left: 50%;
+  margin: auto;
+}
+
+.card {
+  border-radius: 50px;
+  width: 80%;
+}
+.card.text {
+  font-size: 40px;
+  font-family: "Arial Black", Helvetica, sans-serif;
+  color: #2196f3;
+}
+
+.weather-box {
+  border-radius: 100px;
+  border: 25px solid grey;
+  padding: 50px;
+  width: 20%;
+  font-size: 40px;
+}
+
+.button {
+  background-color: #4CAF50;
+  /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 20px;
+}

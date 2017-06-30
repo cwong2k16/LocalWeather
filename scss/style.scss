@@ -1,0 +1,53 @@
+$bgcolor: #2196f3;
+$font-family: "Arial Black", Helvetica, sans-serif;
+$font-size: 40px;
+$width: 80%;
+$border: 25px solid grey;
+
+@mixin bgc($color){
+  background-color: $color;
+}
+
+@mixin border-radius($radius){
+  border-radius: $radius;
+}
+
+.background{
+  @include bgc($bgcolor);
+}
+
+.general-properties{
+  @include bgc(white);
+  text-align: center; 
+  left: 50%;
+  margin: auto;
+}
+
+.card{
+  @extend .general-properties;
+  @include border-radius(50px);
+  width: $width;
+  &.text{
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $bgcolor;
+  }
+}
+
+.weather-box{
+  @extend .general-properties;
+  @include border-radius(100px);
+  border: $border;
+  padding: 50px;
+  width: $width/4;
+  font-size: $font-size;
+}
+
+.button {
+    @include bgc(#4CAF50); /* Green */
+    // border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: $font-size/2;
+}
